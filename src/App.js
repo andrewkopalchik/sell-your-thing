@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Navbar } from './Components/Navbar/Navbar';
-import { About } from './pages/About';
+import { Aboutt } from './pages/Aboutt';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Pricing } from './pages/Pricing';
@@ -16,7 +16,7 @@ return (
 	<div className="container">
 		<Routes>
 			<Route path='/' element = {<Home/>} />
-			<Route path='/about' element = {<About/>} />
+			<Route path='/about' element = {<Aboutt/>} />
 			<Route path='/pricing' element = {<Pricing/>} />
 			<Route path='/login' element={<Login />}/>
 		</Routes>
