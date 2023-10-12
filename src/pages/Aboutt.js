@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-export const About = () => {
+export const Aboutt = () => {
   return (
     <div>Цей сайт розробляється</div>
   )
 }
-export default About;
+export default Aboutt;
