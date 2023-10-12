@@ -1,5 +1,4 @@
 import React from 'react'
-import LoginSignUp from '../Components/LoginSingUp/LoginSignUp'
 
 export const Home = () => {
   return (

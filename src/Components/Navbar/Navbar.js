@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import './styles.css'
 
 export const Navbar = () => {
-	const path = window.location.pathname
   return (
 	<nav className='nav'>
 		<Link to='/' className ='site-title'>
