@@ -6,25 +6,24 @@ import { AdminPanel } from './pages/AdminPanel';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Pricing } from './pages/Pricing';
+import { ProductDetails } from './pages/product/slug.js';
 
 function App() { 
+  return (
+    <>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<Aboutt />} />
+          <Route path='/pricing' element={<Pricing />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/adminpanel' element={<AdminPanel />} />
+          <Route path='/product/:slug' element={<ProductDetails />} />
+        </Routes>
+      </div>
+    </>
+  );
+}
 
-	
-	
-return (
-	<>
-	<Navbar />
-	<div className="container">
-		<Routes>
-			<Route path='/' element = {<Home/>} />
-			<Route path='/about' element = {<Aboutt/>} />
-			<Route path='/pricing' element = {<Pricing/>} />
-			<Route path='/login' element={<Login />}/>
-			<Route path='/adminpanel' element={<AdminPanel />}/>
-		</Routes>
-	</div>
-	</>
-);
-} ;
-
-export default App; 
+export default App;
