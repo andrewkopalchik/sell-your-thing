@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const FooterBanner = () => {
+const FooterBanner = ({f}) => {
   return (
     <div>Hello</div>
   )
