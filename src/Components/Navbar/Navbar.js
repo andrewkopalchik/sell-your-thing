@@ -15,7 +15,7 @@ export const Navbar = () => {
 		<FaShoppingCart onClick={() => setCartOpen(cartOpen = !cartOpen)} className={`shop-cart-button ${cartOpen && 'active'}`} />
 		{cartOpen && (
 			<div className='shop-cart'>
-				
+
 			</div>
 		)}
 			<li className='active'>			
@@ -24,6 +24,9 @@ export const Navbar = () => {
 			
 			<li>
 				<Link to='/about'>About page</Link>
+			</li>
+			<li>
+				<Link to='/userpage'>User page</Link>
 			</li>
 			<li>
 				<Link to='/login'>Login page</Link>

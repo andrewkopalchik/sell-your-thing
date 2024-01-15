@@ -7,6 +7,7 @@ import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Pricing } from './pages/Pricing';
 import { ProductDetails } from './pages/product/slug.js';
+import Userpage from './pages/Userpage';
 
 function App() { 
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/adminpanel' element={<AdminPanel />} />
           <Route path='/product/:slug' element={<ProductDetails />} />
+          <Route path='/userpage' element={<Userpage />} />
         </Routes>
       </div>
     </>
