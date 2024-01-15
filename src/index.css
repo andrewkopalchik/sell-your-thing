@@ -54,6 +54,27 @@ width: 100%;
 .track:hover {
   animation-play-state: paused;
 }
+
+.shop-cart-button{
+  float: right;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+.shop-cart-button:hover,
+.shop-cart-button.active{
+  color: #f02d34;
+  transform: scale(1.5);
+}
+.shop-cart{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  min-height: 100px;
+  background: #f02d34;
+  z-index: 1000;
+
+}
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
